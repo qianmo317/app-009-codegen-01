@@ -46,6 +46,12 @@ export default function Home() {
         >
           新建图解
         </button>
+        <button
+          onClick={() => navigate('/restock')}
+          style={{ padding: '8px 16px', borderRadius: 4, border: '1px solid #e67e22', background: '#fff', color: '#e67e22', cursor: 'pointer' }}
+        >
+          比价本
+        </button>
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 16 }}>
         {charts.map((chart) => (
